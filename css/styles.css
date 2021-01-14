@@ -34,7 +34,7 @@ header{
 }
 
 .nav li:nth-child(3) :hover{
-    color: #000000;
+    color: #052522;
 }
 .nav li figure{
     width:3.6rem;
@@ -77,6 +77,10 @@ label{
 }
 label:hover {
     box-shadow:0 .1rem .5rem .1rem #cccccc;
+}
+label i{
+    font-size: 1.5rem;
+    color: #999999;
 }
 input{
     width: 80%;
