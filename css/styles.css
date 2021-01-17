@@ -2,51 +2,50 @@ html{
     font-size: 62.5%;
     font-family:arial,sans-serif;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 a{
     text-decoration:none;
-    color: #333333;
+    color: #272727;
 }
 header{
-    display: flex;
-    justify-content: flex-end;
     width: 100%;
     height: 10vh;
     font-size: 1.3rem;
 }
-.nav{
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.right{
     display: flex;
     list-style: none;
-    min-height: 4rem;
+    min-height: inherit;
     align-items: center;
     justify-content: center;
-    margin: 1.1rem;
+    margin: 12px 12px 0 0;
 }
-.nav li{
-    margin: 0 1rem;
-    padding-top:.3rem
+.right li{
+    padding:.3rem 1.5rem 0 0;
 }
-.nav li:hover{
+.right li:hover{
     text-decoration:underline;
     cursor: pointer;
 }
-
-.nav li:nth-child(3) :hover{
-    color: #052522;
+.material-icons{
+    color: #737373;
 }
-.nav li figure{
-    width:3.6rem;
-    height:3.6rem; 
-    
+.material-icons:hover{
+    color:#272727;
 }
-.nav img{
+.right li figure{
+    width:3.2rem;
+    height:3.2rem; 
+}
+.right img{
     width: 100%;
-    border-radius: 10rem;
-    object-fit: cover;   
+    border-radius: 50%;
+}
+.right img:hover{
+    box-shadow: 0 .5px 1px #272727;
 }
 main{
     display: flex;
@@ -68,21 +67,21 @@ main{
 }
 
 label{
-    border-radius:7rem;
+    border-radius:.4rem;
     width: 55rem;
     height:4.5rem;
     display: flex;
-    border:solid 1px #cccccc;
+    border:solid 1px #eaebee;
     justify-content:space-evenly;
     align-items: center;
     outline: none;
 }
 label:hover {
-    box-shadow:0 .1rem .5rem .1rem #cccccc;
+    box-shadow:0 .1rem .4rem .1rem #dfe1e5;
 }
 label i{
     font-size: 1.5rem;
-    color: #999999;
+    color: #a0a6ab;
 }
 input{
     width: 80%;
@@ -115,27 +114,29 @@ button{
     padding:1rem;
     margin:.5rem;
     border: none;
-    background: #f9f8f7;
+    background: #f8f9fa;
     border-radius: .4rem;
     font-size:1.4rem;
     cursor: pointer;
+    color:#3c4043;
 }
 button:hover{
-    box-shadow:0 0 .2rem #333333;
+    box-shadow:0 1px 1px  #e0e1e5;
+    border: 1px solid #dadce0
 }
 footer{
     width:100%;
     height: 14vh;
     display: flex;
     flex-wrap: wrap;
-    background-color: #eeeeee;
+    background-color: #f2f2f2;
     font-size: 1.4rem;
 }
 footer li a{
-    color: #555555;;
+    color: #84758c;
 }
 footer li{
-    color: #555555;;
+    color: #84758c;
 }
 .country{
     width: 100%;
@@ -144,7 +145,7 @@ footer ul{
     width: 50%;
     display:flex;
     list-style:none;
-    border: #dddddd solid 1px;
+    border: #dadce0 solid 1px;
     align-items: center;
 }
 footer ul li{
