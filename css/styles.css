@@ -2,18 +2,23 @@ html{
     font-size: 62.5%;
     font-family:arial,sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
 a{
     text-decoration:none;
     color: #272727;
 }
 header{
     width: 100%;
-    height: 10vh;
+    height: 5rem;
     font-size: 1.3rem;
 }
 header nav{
     display: flex;
     justify-content: flex-end;
+    height: auto;
 }
 .right{
     display: flex;
@@ -52,24 +57,21 @@ main{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height:76vh;
 }
 .container {
-    width:30rem;
-    height:10rem;
+    width:27rem;
+    height:9rem;
     display: flex;
     justify-content: flex-end;
-    margin:12rem 0 1rem 0;
+    margin:11rem 0 1rem 0;
 }
 .container img{
     width:100%;
-    object-fit:contain;
 }
-
 label{
-    border-radius:.4rem;
-    width: 55rem;
-    height:4.5rem;
+    border-radius:2.4rem;
+    width: 58rem;
+    height:4.6rem;
     display: flex;
     border:solid 1px #eaebee;
     justify-content:space-evenly;
@@ -94,11 +96,9 @@ input{
 label figure{
     width:2.7rem;
     height:2.5rem;
-    display: flex;
 }
 label figure img{
     width:100%;
-    align-items: center;
 }
 label figure img:hover{
     cursor:pointer;
@@ -126,11 +126,13 @@ button:hover{
 }
 footer{
     width:100%;
-    height: 14vh;
+    min-height:82px;
     display: flex;
     flex-wrap: wrap;
     background-color: #f2f2f2;
     font-size: 1.4rem;
+    bottom: 0;
+    position: absolute;
 }
 footer li a{
     color: #84758c;
