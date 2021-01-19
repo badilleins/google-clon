@@ -151,8 +151,7 @@ footer ul{
     align-items: center;
 }
 footer ul li{
-    margin:0 .5rem;
-    padding:.5rem;
+    padding:1rem 1.1rem;
 }
 ul:nth-child(2){
     border-right: none;
